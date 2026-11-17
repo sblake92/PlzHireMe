@@ -1,0 +1,735 @@
+# ProfileSlice.draft.yaml — experience filled from 6 resumes + the PM resume doc.
+# Nothing here is new content; every text/variant is copied from a source resume.
+# Only edits: bullet labels removed ("Program delivery:" etc.), merged bullets
+# split into their separate claims, and "Soldier" capitalized.
+#
+# Source codes (YAML comments only — the LLM never sees these):
+#   ISA    = Information Systems Analyst 2026
+#   TC     = Technical Consultant 1 Page 2026
+#   SE     = Software Engineer w Military 2026
+#   TPM26  = Technical Product Manager w Military 2026
+#   TPM27  = Technical Product Manager w Military 2027
+#   PM27   = Product Management 2027 (.docx)
+#   PMDOC  = Product Management resume doc (Claude Doc, newest)
+#   SLICE  = your existing ProfileSlice.yaml wording
+#
+# "# REVIEW:" comments mark conflicts or wording-strength differences for you
+# to decide.
+
+person:
+  name: Scott Blake
+  location: Portland, OR
+  links:
+    github: github.com/sblake92
+    linkedin: linkedin.com/in/sblake92
+
+experience:
+  # ---------------------------------------------------------------- FAST
+  - id: fast
+    employer: Fast Enterprises
+    title: Implementation Consultant
+    start: 2020-09
+    end: 2026-12
+    role_summaries:
+      - id: fast-sum-01  # ISA, TC
+        text: >-
+          Primary technical advisor for government agencies implementing a
+          large-scale enterprise taxpayer and revenue management COTS platform —
+          guiding customers from initial discovery through configuration,
+          integration, testing, and post-go-live support.
+      - id: fast-sum-02  # SE
+        text: >-
+          Built and maintained production software on a configurable enterprise
+          taxpayer and revenue management COTS platform for government agencies —
+          spanning custom development, system integrations, and data pipelines.
+      - id: fast-sum-03  # TPM26, TPM27
+        text: >-
+          Led end-to-end technical implementations of a large-scale enterprise
+          COTS platform for government agencies — owning programs from initial
+          discovery through production go-live and post-implementation support.
+      - id: fast-sum-04  # PM27, PMDOC
+        text: >-
+          Configure and roll out an enterprise COTS revenue platform for
+          government agencies, from requirements through go-live and
+          post-implementation support.
+    bullets:
+      - id: fast-01  # SLICE / TC
+        text: >-
+          Conducted deep-dive discovery to assess customer systems, data flows,
+          and dependencies — recommending best-fit configuration approaches and
+          identifying data flow requirements.
+        context: >-
+          "Discovery" here means consulting-style technical discovery, not Fast's
+          homegrown subsystem Discovery.
+        tags:
+          - requirements gathering
+          - data flows
+          - technical advisory
+          - technical discovery
+          - system configuration
+        variants:
+          - id: fast-01-v1  # ISA
+            text: >-
+              Conducted deep-dive discovery to analyze customer systems, data
+              flows, and dependencies — evaluating options, recommending best-fit
+              configuration approaches, and identifying data flow requirements.
+          - id: fast-01-v2  # TPM26, TPM27
+            text: >-
+              Led structured discovery engagements assessing customer systems,
+              data flows, and integration dependencies to produce delivery roadmaps.
+          - id: fast-01-v3  # PM27, PMDOC
+            text: >-
+              Led discovery sessions with agency staff and stakeholders to map
+              workflows, data flows, and integration dependencies, then turn
+              findings into requirements and delivery roadmaps.
+
+      - id: fast-02  # SLICE / SE
+        text: >-
+          Translated complex compliance and reporting requirements into scalable
+          system configurations and production code solutions.
+        tags:
+          - system configuration
+          - scalability
+          - compliance translation
+          - requirements gathering
+        variants:
+          - id: fast-02-v1  # TC
+            text: >-
+              Partnered with stakeholders to understand payment, compliance, and
+              reporting workflows, translating complex business needs into
+              scalable system configurations and custom solutions.
+          - id: fast-02-v2  # ISA
+            text: >-
+              Partnered with stakeholders to analyze payment, compliance, and
+              reporting workflows, translating complex business and operational
+              needs into scalable system configurations and custom solutions.
+
+      - id: fast-03  # SLICE / TPM26, TPM27
+        text: >-
+          Managed concurrent customer implementation programs — scoping, project
+          planning, milestone tracking, and proactive stakeholder communication
+          of status, risks, and issues.
+        tags:
+          - milestone tracking
+          - stakeholder engagement
+          - scoping
+        variants: []
+
+      - id: fast-04  # SLICE
+        text: >-
+          Engineered an unpaid tax discovery (GenTax Discovery) solution
+          processing large-scale taxpayer datasets, generating $500M+ in
+          recovered revenue annually from high-earning taxpayers.
+        context: >-
+          "Discovery" here means the GenTax Discovery subsystem (lead generation
+          for taxpayers who may owe), not consulting-style technical discovery.
+          The Discovery subsystem was already in place; I built a solution on top
+          of it. The system I created identified taxpayers, who were then
+          notified and paid their tax. This is how the revenue was generated.
+        tags:
+          - software engineering
+          - system configuration
+          - datasets
+        variants:
+          - id: fast-04-v1  # SE
+            text: >-
+              Engineered an unpaid tax discovery solution processing large-scale
+              taxpayer datasets, generating $500M+ in recovered revenue annually.
+          - id: fast-04-v2  # TPM26, TPM27 (split from merged bullet)
+            text: >-
+              Engineered an unpaid tax discovery solution generating $500M+
+              annually.
+          - id: fast-04-v3  # ISA, TC (split from merged bullet)
+            text: >-
+              Built an unpaid tax discovery solution generating $500M+ annually.
+
+      - id: fast-05  # rewritten with Blake, 2026-11-13
+        text: >-
+          Wrote an extensive SQL query and built a report-generation solution on
+          the platform's reporting subsystem, producing an automated monthly
+          report on $1.2B+ in revenue records for economists at state and city agencies.
+        context: >-
+          The $1.2B+ figure shows the importance and scale of the data the report
+          covers; it is not revenue that I or the report generated. The reporting
+          subsystem already existed; I built the solution on top of it.
+        tags:
+          - SQL
+          - stakeholder engagement
+          - report generation
+        variants: []
+      - id: fast-06  # PMDOC, PM27
+        text: >-
+          Contributed to a team-led VB.NET-to-C# migration that cut maintenance
+          overhead by 40% and improved scalability.
+        tags:
+          - code conversion
+          - VB.NET
+          - C#
+          - modular architecture
+        variants:
+          - id: fast-06-v1  # TPM26, TPM27 (split from merged bullet)
+            text: >-
+              Contributed to a team-led VB.NET-to-C# modular architecture
+              migration reducing maintenance overhead by 40%.
+          - id: fast-06-v2  # SE
+            text: >-
+              Contributed to a team migration effort transitioning legacy VB.NET
+              monolithic systems to a modular C# architecture, reducing
+              maintenance overhead by 40%.
+          - id: fast-06-v3  # ISA, TC
+            text: >-
+              Contributed to a recent migration effort transitioning legacy
+              VB.NET systems toward a modular C# component architecture.
+
+      - id: fast-07  # TC
+        text: >-
+          Partnered with product, engineering, and implementation teams to
+          resolve technical blockers, align on integration design, and deliver
+          on-time, quality outcomes for customers.
+        tags:
+          - cross-functional team work
+          - deliverability
+        variants:
+          - id: fast-07-v1  # ISA
+            text: >-
+              Partnered with product, engineering, and implementation teams to
+              troubleshoot and resolve technical blockers, align on integration
+              design, and deliver on-time, quality outcomes for customers.
+          - id: fast-07-v2  # TPM26, TPM27
+            text: >-
+              Partnered with product, engineering, QA, and customer success to
+              resolve blockers, manage dependencies, and ensure on-time, quality
+              delivery.
+
+      - id: fast-08  # PM27, PMDOC
+        text: >-
+          Write requirements and acceptance criteria for configuration changes
+          and support UAT through production go-live.
+        tags:
+          - requirements gathering
+          - user acceptance testing
+          - acceptance criteria
+          - requirements writing
+          - technical writing
+        variants: []
+
+  # ---------------------------------------------------------------- ARMY
+  - id: army-snco
+    employer: U.S. Army Reserve
+    title: Senior Religious Affairs NCO
+    functional_title: Program Manager
+    start: 2024-10
+    end: present
+    role_summaries:
+      - id: army-snco-sum-01  # ISA
+        text: >-
+          Serves as senior religious advisor to division-level elements, acting
+          as a subject matter expert in training and leadership development.
+          Currently supporting 1st Special Forces Command (1SFC) in an auxiliary,
+          on-call capacity.
+    bullets:
+      - id: army-snco-01  # TPM26, TPM27
+        text: >-
+          Serves as subject matter expert and program advisor to division-level
+          leadership, delivering training and leadership-development guidance
+          across multiple stakeholder groups.
+        tags:
+          - leadership
+          - leadership development
+          - training
+          - senior leader
+          - advisor
+        variants:
+          - id: army-snco-01-v1  # SE
+            text: >-
+              Serves as subject matter expert and advisor to division-level
+              leadership, delivering training and leadership-development guidance
+              across multiple stakeholder groups.
+          - id: army-snco-01-v2  # ISA
+            text: >-
+              Serves as senior religious affairs advisor at the division level,
+              providing subject matter expertise in training and leadership
+              development.
+      - id: army-snco-02  # TPM26, TPM27, SE
+        text: >-
+          Maintains operational readiness to support 1st Special Forces Command
+          (1SFC) programs in an on-call advisory capacity.
+        tags: []
+        variants:
+          - id: army-snco-02-v1  # ISA
+            text: >-
+              Maintains readiness to support 1st Special Forces Command (1SFC)
+              operations in an on-call capacity.
+
+  - id: army-dsl
+    employer: U.S. Army Reserve
+    title: Drill Sergeant
+    functional_title: Senior Trainer and Program Director
+    start: 2019-07
+    end: 2024-10
+    role_summaries:
+      - id: army-dsl-sum-01  # ISA, SE
+        text: >-
+          Led a team of junior and mid-level trainers, overseeing all training
+          operations and candidate development for a high-volume military
+          training program.
+      - id: army-dsl-sum-02  # TPM26, TPM27
+        text: >-
+          Directed all training operations and candidate development for a
+          high-volume program, leading a team of junior and mid-level trainers
+          and owning program scope, scheduling, and quality standards.
+    bullets:
+      - id: army-dsl-01  # ISA, SE
+        text: >-
+          Designed a candidate training framework recognized by senior regional
+          command and subsequently adopted at a national organizational level.
+        tags:
+          - training
+          - training development
+        variants:
+          - id: army-dsl-01-v1  # TPM26, TPM27
+            text: >-
+              Designed and implemented a candidate training program recognized by
+              senior regional command and subsequently scaled to broader
+              organizational adoption.
+      - id: army-dsl-02  # ISA, SE
+        text: >-
+          Mentors and develops 15+ junior leaders and 4 mid-level leaders, several
+          of whom have gone on to win regional competitions and become strong
+          independent leaders in their own right.
+        tags:
+          - leadership development
+          - leader
+          - senior leader
+        variants:
+          - id: army-dsl-02-v1  # TPM26, TPM27
+            text: >-
+              Led and mentored a team of 15+ junior leaders and 4 mid-level
+              leaders, several of whom advanced to independent leadership roles
+              and regional competition wins.
+          - id: army-dsl-02-v2  # PM27, PMDOC (split from merged bullet)
+            text: >-
+              Led 15+ junior and 4 mid-level leaders.
+      - id: army-dsl-03  # ISA, SE
+        text: >-
+          Developed training regimens that increased unit efficiency and
+          individual readiness by more than 230%.
+        tags:
+          - training
+          - training development
+          - optimization
+        variants:
+          - id: army-dsl-03-v1  # TPM26, TPM27
+            text: >-
+              Implemented process improvements to training regimens, increasing
+              program efficiency and individual readiness outcomes by more than
+              230%.
+          - id: army-dsl-03-v2  # PM27, PMDOC (split from merged bullet)
+            text: >-
+              Raised efficiency and readiness outcomes by 230%+.
+      - id: army-dsl-04  # ISA, SE
+        text: >-
+          Managed program budget, equipment, and resources in excess of $200K.
+        tags:
+          - resource management
+          - funds management
+        variants: []
+
+  - id: army-ds
+    employer: U.S. Army Reserve
+    title: Drill Sergeant
+    functional_title: Trainer
+    start: 2017-06
+    end: 2019-07
+    role_summaries:
+      - id: army-ds-sum-01  # ISA, SE
+        text: >-
+          Guided and oversaw 200+ Soldiers through training, ensuring adherence
+          to training standards and graduation requirement timelines.
+      - id: army-ds-sum-02  # TPM26, TPM27
+        text: >-
+          Managed training program delivery for 200+ personnel, ensuring
+          adherence to program standards, milestones, and graduation timelines.
+    bullets:
+      - id: army-ds-01  # ISA, SE
+        text: >-
+          Guided 200+ Soldiers to successful graduation.
+        tags:
+          - training
+          - training program
+        variants:
+          - id: army-ds-01-v1  # TPM26, TPM27
+            text: >-
+              Delivered training program milestones for 200+ personnel through to
+              successful graduation.
+      - id: army-ds-02  # ISA, SE
+        text: >-
+          Implemented new training techniques that led to a 300% increase in
+          candidate graduation success rate.
+        tags:
+          - leader
+          - leadership
+          - training optimization
+        variants:
+          - id: army-ds-02-v1  # TPM26, TPM27
+            text: >-
+              Implemented process improvements to training methodology, driving a
+              300% increase in candidate graduation success rate.
+
+  - id: army-pm
+    employer: U.S. Army Reserve
+    title: Religious Affairs NCO
+    functional_title: Project Manager
+    location: Kuwait
+    start: 2015-12
+    end: 2017-06
+    role_summaries:
+      - id: army-pm-sum-01  # ISA, SE
+        text: >-
+          Managed funds and service needs across 4 countries in the Middle East;
+          coordinated logistical requirements for 50+ missions and events.
+      - id: army-pm-sum-02  # TPM26, TPM27
+        text: >-
+          Managed program funding and service delivery across 4 countries in the
+          Middle East; coordinated stakeholder and logistical requirements for
+          50+ missions and events.
+    bullets:
+      - id: army-pm-01  # ISA, SE
+        text: >-
+          Maintained logistical requirements and upgraded six projects totaling
+          over $250K across the Middle East.
+        tags:
+          - logistical coordination
+        variants:
+          - id: army-pm-01-v1  # TPM26, TPM27
+            text: >-
+              Led six capital projects totaling over $250K across the Middle East,
+              from planning through execution.
+          - id: army-pm-01-v2  # PM27, PMDOC (split from merged bullet)
+            text: >-
+              Led six capital projects totaling $250K+ across four countries.
+      - id: army-pm-02  # PM27, PMDOC (split from merged bullet)
+        text: >-
+          Coordinated stakeholders for 50+ missions and events.
+        tags:
+          - stakeholder coordination
+          - stakeholder engagement
+        variants: []
+      - id: army-pm-03  # ISA, SE
+        text: >-
+          Oversaw execution of events involving more than $100K worth of
+          equipment.
+        tags:
+          - event execution
+        variants:
+          - id: army-pm-03-v1  # TPM26, TPM27
+            text: >-
+              Oversaw execution of events involving $100K+ in equipment
+              resources, managing scope, vendors, and timelines.
+      - id: army-pm-04  # ISA, SE
+        text: >-
+          Resolved conflicts and negotiated agreements between parties,
+          consistently driving win-win solutions and clarifying
+          misunderstandings.
+        tags:
+          - conflict resolution
+        variants:
+          - id: army-pm-04-v1  # TPM26, TPM27
+            text: >-
+              Facilitated stakeholder negotiations and conflict resolution,
+              consistently driving win-win outcomes across cross-cultural teams.
+
+  - id: army-fm
+    employer: U.S. Army Reserve
+    title: Religious Affairs Specialist
+    functional_title: Facilities Manager
+    location: Kuwait
+    start: 2015-06
+    end: 2015-12
+    role_summaries:
+      - id: army-fm-sum-01  # ISA, SE
+        text: >-
+          Responsible for facility operations and equipment across 350,000 total
+          square feet spanning 5 buildings, with equipment valued in excess of
+          $500K.
+      - id: army-fm-sum-02  # TPM26, TPM27
+        text: >-
+          Managed facility operations and a $500K+ asset portfolio across 350,000
+          sq ft and 5 buildings.
+    bullets:
+      - id: army-fm-01  # ISA, SE
+        text: >-
+          Developed SOPs and continuity files, increasing the functionality of
+          the facility and its processes.
+        tags: []
+        variants:
+          - id: army-fm-01-v1  # TPM26, TPM27
+            text: >-
+              Developed standard operating procedures and continuity
+              documentation, improving process functionality and program
+              resilience.
+      - id: army-fm-02  # ISA, SE
+        text: >-
+          Managed funds effectively, generating over $5K in annual savings.
+        tags: []
+        variants:
+          - id: army-fm-02-v1  # TPM26, TPM27
+            text: >-
+              Managed budget and funds, generating $5K+ in annual savings through
+              process efficiencies.
+      - id: army-fm-03  # ISA, SE, TPM26, TPM27
+        text: >-
+          Managed customer service operations at main headquarters.
+        tags: []
+        variants: []
+
+  - id: army-apm
+    employer: U.S. Army Reserve
+    title: Religious Affairs Specialist
+    functional_title: Assistant Program Manager
+    start: 2010-10
+    end: 2015-06
+    role_summaries:
+      - id: army-apm-sum-01  # ISA, SE
+        text: >-
+          Conducted team training for Special Service needs; managed logistical
+          and administrative needs of the Chaplain; coordinated low-denomination
+          services for 50+ Soldiers.
+      - id: army-apm-sum-02  # TPM26, TPM27
+        text: >-
+          Coordinated team training for Special Service needs; managed logistical
+          and administrative program requirements for the Chaplain's office;
+          scheduled services for 50+ Soldiers.
+    priority: low  # mostly shows growth; first to cut for space
+    context: >-
+      This role was essentially an assistant to a Chaplain. Low-denomination services refer
+      to faith groups that had lower attendance than others. Special Service needs just means
+      specific needs that aren't common.
+    bullets:
+      - id: army-apm-01  # ISA, SE
+        text: >-
+          Planned and executed religious support operations, providing support to
+          10,000+ service members.
+        tags: []
+        variants:
+          - id: army-apm-01-v1  # TPM26, TPM27
+            text: >-
+              Planned and executed a support program serving 10,000+ service
+              members, coordinating logistics, scheduling, and administrative
+              requirements.
+      - id: army-apm-02  # ISA, SE
+        text: >-
+          Recognized for dedication to Soldier care; awarded the Army
+          Commendation Medal for implementation of religious support programs.
+        tags: []
+        variants:
+          - id: army-apm-02-v1  # TPM26, TPM27
+            text: >-
+              Recognized with the Army Commendation Medal for successful program
+              implementation and dedication to service delivery.
+
+# Army-wide lines that don't belong to a single role.
+army_overview:
+  title: Sergeant First Class
+  start: 2010-10
+  end: present
+  summaries:
+    - id: army-ov-sum-01  # ISA, SE, TPM26, TPM27
+      text: >-
+        16 years of U.S. Army Reserve leadership — Program Director, Program
+        Manager, Project Manager.
+    - id: army-ov-sum-02  # PM27, PMDOC
+      text: >-
+        16 years of service (2010 – Present); currently Senior Religious Affairs
+        NCO, advising division-level leadership as a Sergeant First Class.
+  bullets:
+    - id: army-ov-01  # TC (split from merged bullet)
+      text: >-
+        Led multi-disciplinary teams through complex operational programs.
+      tags:
+        - leader
+        - leadership
+      variants: []
+    - id: army-ov-02  # TC, rewritten 2026-11-16
+      priority: low
+      text: >-
+        Adopted collaboration tools (Trello, Zoom, Chime) early to coordinate
+        geographically dispersed teams in compliance-heavy, high-stakes environments.
+      context: >-
+        "Early" means before these tools were widely used.
+      tags:
+        - optimization
+      variants: []
+
+# Skills = what the LLM is ALLOWED TO CLAIM. Every skill needs evidence
+# (bullet IDs). Built from your tags plus the skills sections of past resumes.
+# Tags that describe rather than claim (datasets, scalability, deliverability,
+# leader, senior leader, advisor, training program) stay tags only.
+# Skills under "NO EVIDENCE" came from old resume skill sections and have no
+# bullet backing them yet: add evidence, move evidence to projects/certs later,
+# or delete.
+skills:
+  # ------------------------------------------------ technical
+  - name: SQL
+    category: technical
+    evidence: [fast-05]
+  - name: C#
+    category: technical
+    evidence: [fast-06]
+  - name: VB.NET
+    category: technical
+    evidence: [fast-06]
+  - name: Relational databases
+    category: technical
+    evidence: [fast-05]
+  - name: Data analysis and reporting
+    category: technical
+    evidence: [fast-05]
+  - name: Data flow design
+    category: technical
+    evidence: [fast-01]
+  - name: System configuration
+    category: technical
+    evidence: [fast-01, fast-02, fast-04]
+  - name: Enterprise COTS/ERP systems
+    category: technical
+    evidence: [fast-01, fast-02, fast-04, fast-06]
+  - name: Legacy system migration
+    category: technical
+    evidence: [fast-06]
+  - name: Modular architecture
+    category: technical
+    evidence: [fast-06]
+  - name: Software engineering
+    category: technical
+    # REVIEW: very broad — keep as a skill, or tag only?
+    evidence: [fast-04]
+
+  # ------------------------------------------------ delivery / product
+  - name: Requirements gathering
+    category: delivery
+    evidence: [fast-01, fast-02, fast-08]
+  - name: Requirements and acceptance criteria writing
+    category: delivery
+    evidence: [fast-08]
+  - name: User acceptance testing (UAT)
+    category: delivery
+    evidence: [fast-08]
+  - name: Technical writing
+    category: delivery
+    evidence: [fast-08]
+  - name: Technical discovery
+    category: delivery
+    evidence: [fast-01]
+  - name: Customer-facing technical advisory
+    category: delivery
+    evidence: [fast-01]
+  - name: Technical-to-business translation
+    category: delivery
+    evidence: [fast-02]
+  - name: Workflow analysis
+    category: delivery
+    evidence: [fast-02]
+  - name: Scoping and project planning
+    category: delivery
+    evidence: [fast-03]
+  - name: Milestone tracking and reporting
+    category: delivery
+    evidence: [fast-03]
+  - name: Stakeholder engagement
+    category: delivery
+    evidence: [fast-03, fast-05, army-pm-02]
+  - name: Cross-functional collaboration
+    category: delivery
+    evidence: [fast-07]
+  - name: Troubleshooting and post-implementation support
+    category: delivery
+    evidence: [fast-07]
+
+  # ------------------------------------------------ leadership / operations
+  - name: Team leadership
+    category: leadership
+    evidence: [army-dsl-02, army-ds-02, army-ov-01]
+  - name: Mentoring and leadership development
+    category: leadership
+    evidence: [army-snco-01, army-dsl-02]
+  - name: Training program design
+    category: leadership
+    evidence: [army-dsl-01, army-dsl-03]
+  - name: Training delivery
+    category: leadership
+    evidence: [army-snco-01, army-ds-01]
+  - name: Process improvement
+    category: leadership
+    evidence: [army-dsl-03, army-ds-02]
+  - name: Budget and resource management
+    category: leadership
+    # REVIEW: depends on the open army-dsl-04 "equipment" vs "budget" question
+    evidence: [army-dsl-04, army-fm-02]
+  - name: Logistics coordination
+    category: leadership
+    evidence: [army-pm-01, army-apm-01]
+  - name: Event planning and execution
+    category: leadership
+    evidence: [army-pm-03]
+  - name: Conflict resolution and negotiation
+    category: leadership
+    evidence: [army-pm-04]
+
+  # ------------------------------------------------ NO EVIDENCE (review)
+  - name: Python
+    category: technical
+    # REVIEW: evidence will come from the RepOsitory project once projects are added
+    evidence: []
+  - name: Jira
+    category: delivery
+    # REVIEW: RepOsitory project
+    evidence: []
+  - name: Scrum and Kanban
+    category: delivery
+    # REVIEW: certification (CSPO / "Scrum & Agile Certified") or RepOsitory
+    evidence: []
+  - name: Secure SDLC (CSSLP)
+    category: technical
+    # REVIEW: certification, not a bullet — allow certs as evidence?
+    evidence: []
+  - name: C / C++
+    category: technical
+    # REVIEW: on 3 resumes, nothing backs it up anywhere
+    evidence: []
+  - name: Java
+    category: technical
+    # REVIEW: SE resume only, nothing backs it up
+    evidence: []
+  - name: CI/CD and release pipeline management
+    category: technical
+    # REVIEW: on 5 resumes; no bullet mentions it
+    evidence: []
+  - name: ETL workflows
+    category: technical
+    # REVIEW: SE resume only; the "data pipelines" mismatch risk again
+    evidence: []
+  - name: OOP and design patterns
+    category: technical
+    # REVIEW: SE resume only; C# migration work may support it?
+    evidence: []
+  - name: Integration testing
+    category: technical
+    # REVIEW: SE resume only
+    evidence: []
+  - name: Risk identification and mitigation
+    category: delivery
+    # REVIEW: fast-03 says you communicated risks, not that you mitigated them
+    evidence: []
+  - name: Configuration and change management
+    category: delivery
+    # REVIEW: ISA/TC resumes; closest is fast-02
+    evidence: []
+  - name: Release coordination
+    category: delivery
+    # REVIEW: PM resume; closest is fast-08 ("support UAT through go-live")
+    evidence: []
+  - name: Executive and non-technical communication
+    category: delivery
+    # REVIEW: ISA/TC resumes; closest is fast-03 / army-snco-01
+    evidence: []
