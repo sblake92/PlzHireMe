@@ -600,10 +600,6 @@ skills:
   - name: Modular architecture
     category: technical
     evidence: [fast-06]
-  - name: Software engineering
-    category: technical
-    # REVIEW: very broad — keep as a skill, or tag only?
-    evidence: [fast-04]
 
   # ------------------------------------------------ delivery / product
   - name: Requirements gathering
@@ -700,10 +696,6 @@ skills:
   - name: Java
     category: technical
     # REVIEW: SE resume only, nothing backs it up
-    evidence: []
-  - name: CI/CD and release pipeline management
-    category: technical
-    # REVIEW: on 5 resumes; no bullet mentions it
     evidence: []
   - name: ETL workflows
     category: technical
