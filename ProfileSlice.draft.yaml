@@ -19,6 +19,7 @@ person:
   links:
     github: github.com/sblake92
     linkedin: linkedin.com/in/scott-blake92/
+  #contact info will exist in a seperate yaml doc and included in .gitIgnore
 
 experience:
   # ---------------------------------------------------------------- FAST
