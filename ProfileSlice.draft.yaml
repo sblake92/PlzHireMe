@@ -1,27 +1,24 @@
-# ProfileSlice.draft.yaml — experience filled from 6 resumes + the PM resume doc.
-# Nothing here is new content; every text/variant is copied from a source resume.
-# Only edits: bullet labels removed ("Program delivery:" etc.), merged bullets
-# split into their separate claims, and "Soldier" capitalized.
+# ProfileSlice.draft.yaml — profile for the afternoon test.
+# Consolidated from 6 past resumes + the PM resume doc, then reviewed and
+# edited by Blake (bullets rewritten, merged bullets split, variants limited
+# to true rewordings, context fields added).
 #
-# Source codes (YAML comments only — the LLM never sees these):
+# Source codes on bullets (YAML comments only — the LLM never sees these):
 #   ISA    = Information Systems Analyst 2026
 #   TC     = Technical Consultant 1 Page 2026
 #   SE     = Software Engineer w Military 2026
 #   TPM26  = Technical Product Manager w Military 2026
 #   TPM27  = Technical Product Manager w Military 2027
 #   PM27   = Product Management 2027 (.docx)
-#   PMDOC  = Product Management resume doc (Claude Doc, newest)
-#   SLICE  = your existing ProfileSlice.yaml wording
-#
-# "# REVIEW:" comments mark conflicts or wording-strength differences for you
-# to decide.
+#   PMDOC  = Product Management resume doc (Claude Doc)
+#   SLICE  = original ProfileSlice.yaml wording
 
 person:
   name: Scott Blake
   location: Portland, OR
   links:
     github: github.com/sblake92
-    linkedin: linkedin.com/in/sblake92
+    linkedin: linkedin.com/in/scott-blake92/
 
 experience:
   # ---------------------------------------------------------------- FAST
@@ -29,7 +26,7 @@ experience:
     employer: Fast Enterprises
     title: Implementation Consultant
     start: 2020-09
-    end: 2026-12
+    end: present
     role_summaries:
       - id: fast-sum-01  # ISA, TC
         text: >-
@@ -49,7 +46,7 @@ experience:
           discovery through production go-live and post-implementation support.
       - id: fast-sum-04  # PM27, PMDOC
         text: >-
-          Configure and roll out an enterprise COTS revenue platform for
+          Configured and rolled out an enterprise COTS revenue platform for
           government agencies, from requirements through go-live and
           post-implementation support.
     bullets:
@@ -59,8 +56,8 @@ experience:
           and dependencies — recommending best-fit configuration approaches and
           identifying data flow requirements.
         context: >-
-          "Discovery" here means consulting-style technical discovery, not Fast's
-          homegrown subsystem Discovery.
+          "Discovery" here means consulting-style technical discovery, not the
+          GenTax Discovery subsystem.
         tags:
           - requirements gathering
           - data flows
@@ -80,7 +77,7 @@ experience:
           - id: fast-01-v3  # PM27, PMDOC
             text: >-
               Led discovery sessions with agency staff and stakeholders to map
-              workflows, data flows, and integration dependencies, then turn
+              workflows, data flows, and integration dependencies, then turned
               findings into requirements and delivery roadmaps.
 
       - id: fast-02  # SLICE / SE
@@ -147,7 +144,8 @@ experience:
         text: >-
           Wrote an extensive SQL query and built a report-generation solution on
           the platform's reporting subsystem, producing an automated monthly
-          report on $1.2B+ in revenue records for economists at state and city agencies.
+          report on $1.2B+ in revenue records for economists at state and city
+          agencies.
         context: >-
           The $1.2B+ figure shows the importance and scale of the data the report
           covers; it is not revenue that I or the report generated. The reporting
@@ -157,6 +155,7 @@ experience:
           - stakeholder engagement
           - report generation
         variants: []
+
       - id: fast-06  # PMDOC, PM27
         text: >-
           Contributed to a team-led VB.NET-to-C# migration that cut maintenance
@@ -203,8 +202,8 @@ experience:
 
       - id: fast-08  # PM27, PMDOC
         text: >-
-          Write requirements and acceptance criteria for configuration changes
-          and support UAT through production go-live.
+          Wrote requirements and acceptance criteria for configuration changes
+          and supported UAT through production go-live.
         tags:
           - requirements gathering
           - user acceptance testing
@@ -294,7 +293,7 @@ experience:
               organizational adoption.
       - id: army-dsl-02  # ISA, SE
         text: >-
-          Mentors and develops 15+ junior leaders and 4 mid-level leaders, several
+          Mentored and developed 15+ junior leaders and 4 mid-level leaders, several
           of whom have gone on to win regional competitions and become strong
           independent leaders in their own right.
         tags:
@@ -502,9 +501,9 @@ experience:
           scheduled services for 50+ Soldiers.
     priority: low  # mostly shows growth; first to cut for space
     context: >-
-      This role was essentially an assistant to a Chaplain. Low-denomination services refer
-      to faith groups that had lower attendance than others. Special Service needs just means
-      specific needs that aren't common.
+      This role was essentially an assistant to a Chaplain. Low-denomination
+      services refer to faith groups that had lower attendance than others.
+      Special Service needs just means specific needs that aren't common.
     bullets:
       - id: army-apm-01  # ISA, SE
         text: >-
@@ -554,20 +553,120 @@ army_overview:
       priority: low
       text: >-
         Adopted collaboration tools (Trello, Zoom, Chime) early to coordinate
-        geographically dispersed teams in compliance-heavy, high-stakes environments.
+        geographically dispersed teams in compliance-heavy, high-stakes
+        environments.
       context: >-
         "Early" means before these tools were widely used.
       tags:
         - optimization
       variants: []
 
-# Skills = what the LLM is ALLOWED TO CLAIM. Every skill needs evidence
-# (bullet IDs). Built from your tags plus the skills sections of past resumes.
-# Tags that describe rather than claim (datasets, scalability, deliverability,
-# leader, senior leader, advisor, training program) stay tags only.
-# Skills under "NO EVIDENCE" came from old resume skill sections and have no
-# bullet backing them yet: add evidence, move evidence to projects/certs later,
-# or delete.
+
+certifications:
+  - id: cert-csslp
+    name: Certified Secure Software Lifecycle Professional (CSSLP)
+    certificate_id: 7GWGPKGH
+    issued: 2025-02
+    expiration: 2030-02
+  - id: cert-sspoc
+    name: Scaled Scrum Product Owner Certified (SSPOC)
+    certificate_id: "773699"
+    issued: 2026-01
+    expiration: 2029-01
+  - id: cert-smc
+    name: Scrum Master Certified (SMC)
+    certificate_id: "791558"
+    issued: 2026-01
+    expiration: 2029-01
+  - id: cert-samc
+    name: SCRUMstudy Agile Master Certified (SAMC)
+    certificate_id: "774137"
+    issued: 2026-01
+    expiration: 2029-01
+  - id: cert-aplus
+    name: CompTia A+
+    issued: ~
+    expiration: ~
+    status: in-progress
+
+projects:
+  - id: pro-rep
+    name: RepOsitory
+    phase: initial development
+    text: >-
+      A personal workout and physical therapy tracker: log every set, track how
+      PT sessions affect pain, follow planned programs, and see progress over
+      time. The name is a pun: a repository of reps.
+    tags:
+      - SQLite
+      - Python
+      - Pydantic
+      - app development
+      - LLM API calls
+      - database management
+      - Jira
+      - Kanban
+  - id: pro-plz
+    name: PlzHireMe
+    phase: design
+    text: >-
+      A personal browser extension that reads a job posting and produces a
+      conservatively tailored resume PDF from a single merged YAML file.
+    tags:
+      - LLM API calls
+      - web development
+      - Pydantic
+      - YAML
+      - LLM automated process
+
+education:
+  - id: edu-bs
+    type: Bachelor of Science
+    major: Computer Science and Software Engineering
+    school: University of Washington
+    coursework:
+      - C++
+      - Object-Oriented Programming
+      - Database Design
+      - Public Speaking
+      - Speech and Debate
+      - Technical Writing
+    graduated: 2020-12
+  - id: edu-aa
+    type: Associate
+    major: General Studies
+    school: Shoreline Community College
+    coursework:
+      - Python
+      - Java
+      - Psychology
+      - Calculus
+      - Statistics
+    graduated: 2018-06
+  - id: edu-ms
+    type: Master of Science
+    major: Engineering and Technology Management
+    school: Portland State University
+    status: in-progress
+    expected: 2028-06
+  - id: edu-slc
+    type: Senior Leadership Course
+    major: Leadership
+    school: U.S. Army Leadership Academy
+    graduated: 2025-06
+  - id: edu-ds
+    type: Training and Leadership Course
+    major: Training and Doctrine
+    school: U.S. Army Drill Sergeant Academy
+    graduated: 2019-12
+
+
+# Skills = what the LLM is ALLOWED TO CLAIM. Every skill needs evidence:
+# bullet, project, certification or education IDs. Tags that describe rather
+# than claim (datasets, scalability, deliverability, leader, senior leader,
+# advisor, training program) stay tags only.
+# skills_section_only: true = may appear in a skills list, but never as the
+# basis for a bullet (evidence is role-level only, no approved wording).
 skills:
   # ------------------------------------------------ technical
   - name: SQL
@@ -645,22 +744,21 @@ skills:
   # ------------------------------------------------ leadership / operations
   - name: Team leadership
     category: leadership
-    evidence: [army-dsl-02, army-ds-02, army-ov-01]
+    evidence: [army-dsl-02, army-ds-02, army-ov-01, edu-slc]
   - name: Mentoring and leadership development
     category: leadership
-    evidence: [army-snco-01, army-dsl-02]
+    evidence: [army-snco-01, army-dsl-02, edu-slc]
   - name: Training program design
     category: leadership
-    evidence: [army-dsl-01, army-dsl-03]
+    evidence: [army-dsl-01, army-dsl-03, edu-ds]
   - name: Training delivery
     category: leadership
-    evidence: [army-snco-01, army-ds-01]
+    evidence: [army-snco-01, army-ds-01, edu-ds]
   - name: Process improvement
     category: leadership
     evidence: [army-dsl-03, army-ds-02]
   - name: Budget and resource management
     category: leadership
-    # REVIEW: depends on the open army-dsl-04 "equipment" vs "budget" question
     evidence: [army-dsl-04, army-fm-02]
   - name: Logistics coordination
     category: leadership
@@ -672,56 +770,33 @@ skills:
     category: leadership
     evidence: [army-pm-04]
 
-  # ------------------------------------------------ NO EVIDENCE (review)
+  # ------------------------------------------ projects, certifications, education
   - name: Python
     category: technical
-    # REVIEW: evidence will come from the RepOsitory project once projects are added
-    evidence: []
+    evidence: [edu-aa, pro-rep, pro-plz]
   - name: Jira
     category: delivery
-    # REVIEW: RepOsitory project
-    evidence: []
+    evidence: [pro-rep, pro-plz]
   - name: Scrum and Kanban
     category: delivery
-    # REVIEW: certification (CSPO / "Scrum & Agile Certified") or RepOsitory
-    evidence: []
+    evidence: [pro-rep, pro-plz, cert-sspoc, cert-smc]
   - name: Secure SDLC (CSSLP)
     category: technical
-    # REVIEW: certification, not a bullet — allow certs as evidence?
-    evidence: []
+    evidence: [cert-csslp]
   - name: C / C++
     category: technical
-    # REVIEW: on 3 resumes, nothing backs it up anywhere
-    evidence: []
+    evidence: [edu-aa, edu-bs]
   - name: Java
     category: technical
-    # REVIEW: SE resume only, nothing backs it up
-    evidence: []
-  - name: ETL workflows
-    category: technical
-    # REVIEW: SE resume only; the "data pipelines" mismatch risk again
-    evidence: []
+    evidence: [edu-aa]
   - name: OOP and design patterns
     category: technical
-    # REVIEW: SE resume only; C# migration work may support it?
-    evidence: []
-  - name: Integration testing
-    category: technical
-    # REVIEW: SE resume only
-    evidence: []
-  - name: Risk identification and mitigation
-    category: delivery
-    # REVIEW: fast-03 says you communicated risks, not that you mitigated them
-    evidence: []
+    evidence: [edu-aa, edu-bs]
   - name: Configuration and change management
     category: delivery
-    # REVIEW: ISA/TC resumes; closest is fast-02
-    evidence: []
-  - name: Release coordination
-    category: delivery
-    # REVIEW: PM resume; closest is fast-08 ("support UAT through go-live")
-    evidence: []
+    evidence: [fast]
+    skills_section_only: true
   - name: Executive and non-technical communication
     category: delivery
-    # REVIEW: ISA/TC resumes; closest is fast-03 / army-snco-01
-    evidence: []
+    evidence: [fast]
+    skills_section_only: true
