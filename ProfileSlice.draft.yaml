@@ -800,3 +800,62 @@ skills:
     category: delivery
     evidence: [fast]
     skills_section_only: true
+
+never_claim:
+  - id: nc-maint-costs
+    claim: Reduced maintenance costs or saved money on the VB.NET-to-C# migration
+    reason: The 40% was maintenance overhead (effort), not a measured dollar cost.
+    match: ["maintenance cost", "cost savings", "reduced costs"]
+    applies_to: [fast-06]
+  - id: nc-revenue-generated
+    claim: Personally generated or drove revenue
+    reason: Revenue came from taxpayers paying after the system identified them.
+    match: ["generated $500M", "drove $500M", "generated $1.2B"]
+    applies_to: [fast-04, fast-05]
+  - id: nc-led-mig
+    claim: Led VB.NET-to-C# modular architecture migration
+    reason: I was part of a team that all contributed to the success of this project.
+    match: ["Led architecture migration", "Supervised architecture migration", "Oversaw development of architecture migration"]
+
+  # ---- drafted by Claude 2026-11-18 from issues caught during consolidation;
+  - id: nc-built-discovery
+    claim: Built, designed or created the GenTax Discovery subsystem or GenTax itself
+    reason: Discovery already existed; I built a solution on top of it.
+    match: ["built GenTax", "created GenTax", "built the Discovery", "designed the Discovery", "developed GenTax"]
+    applies_to: [fast-04]
+  - id: nc-built-reporting
+    claim: Built the reporting system, or delivered real-time reporting tools
+    reason: I wrote the query and generation process on an existing reporting subsystem; the report is monthly, not real-time.
+    match: ["real-time", "built the reporting system", "reporting platform", "reporting tools"]
+    applies_to: [fast-05]
+  - id: nc-api-integrations
+    claim: Built API integrations or did API or integration testing at Fast
+    reason: Integration work at Fast is process integration, not APIs.
+    match: ["API", "integration testing", "REST", "web services"]
+    applies_to: [fast-07, fast-sum-01, fast-sum-02]
+  - id: nc-data-engineering
+    claim: Data engineering experience with ETL or pipeline tooling
+    reason: Past resumes said data pipelines, meaning platform data flows, not ETL tools like Airflow, Spark or dbt.
+    match: ["ETL", "Airflow", "Spark", "dbt", "data engineer"]
+    applies_to: [fast-sum-02]
+  - id: nc-test-automation
+    claim: Wrote automated tests or test scripts at Fast
+    reason: Testing at Fast is mostly UAT; no test scripts written there.
+    match: ["automated test", "test scripts", "test automation", "unit tests"]
+  - id: nc-cicd
+    claim: Managed CI/CD or release pipelines
+    reason: Appeared on past resumes but no experience backs it up.
+    match: ["CI/CD", "continuous integration", "continuous delivery", "release pipeline", "deployment pipeline"]
+  - id: nc-scrum-role
+    claim: Served as Scrum Master or Product Owner at Fast
+    reason: Fast works scrum-like, not formal Scrum; the certifications don't mean I held those roles there.
+    match: ["served as Scrum Master", "served as Product Owner", "as Scrum Master", "as Product Owner"]
+  - id: nc-cpp-java-professional
+    claim: Professional experience with C/C++ or Java
+    reason: These come from coursework only (edu-aa, edu-bs).
+    match: ["years of Java", "years of C++", "Java development", "C++ development"]
+  - id: nc-fast-direct-reports
+    claim: Managed people or had direct reports at Fast
+    reason: Fast bullets show leading programs and contributing to teams, not managing staff.
+    match: ["direct reports", "managed a team of", "supervised"]
+    applies_to: [fast-03, fast-sum-03]
